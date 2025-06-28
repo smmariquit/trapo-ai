@@ -22,13 +22,15 @@ function App() {
       });
 
       if (!response.ok) {
-        throw new Error('Failed to generate speech');
+        const errorData = await response.json();
+        throw new Error(errorData.error || 'Failed to generate speech');
       }
 
       const data = await response.json();
       setSpeech(data.speech);
     } catch (err) {
-      setError('Failed to generate speech. Please check your API key and try again.');
+      const errorMessage = err.message || 'Failed to generate speech. Please check your API key and try again.';
+      setError(errorMessage);
       console.error('Error generating speech:', err);
     } finally {
       setIsLoading(false);

@@ -24,7 +24,7 @@ app.post('/api/generate-speech', async (req, res) => {
 
     // Initialize Gemini AI
     const genAI = new GoogleGenerativeAI(apiKey);
-    const model = genAI.getGenerativeModel({ model: "gemini-pro" });
+    const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash-exp" });
 
     // Create the prompt for the humorous speech
     const prompt = `Create a humorous 30-second political campaign speech for ${name} who is running for ${position} in ${location}. 
@@ -42,18 +42,27 @@ Make it sound like a typical politician trying to deceive voters with empty prom
 
     // Generate the speech
     const result = await model.generateContent(prompt);
-    const speech = result.response.text();
+    const response = await result.response;
+    const speech = response.text();
 
     res.json({ speech });
   } catch (error) {
     console.error('Error generating speech:', error);
+    console.error('Error details:', {
+      message: error.message,
+      name: error.name,
+      stack: error.stack
+    });
     
     if (error.message.includes('API_KEY_INVALID')) {
       res.status(401).json({ error: 'Invalid API key. Please check your Gemini API key.' });
     } else if (error.message.includes('QUOTA_EXCEEDED')) {
       res.status(429).json({ error: 'API quota exceeded. Please try again later.' });
     } else {
-      res.status(500).json({ error: 'Failed to generate speech. Please try again.' });
+      res.status(500).json({ 
+        error: 'Failed to generate speech. Please try again.',
+        details: error.message
+      });
     }
   }
 });
