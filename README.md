@@ -118,4 +118,13 @@ This project is open source and available under the MIT License.
 
 ---
 
-**Happy campaigning! 🗣️✨** 
+**Happy campaigning! 🗣️✨**
+
+## 📊 Current State of the Code
+- **Tech Stack:** React, Node.js/NPM
+- **Repository Size:** 18 tracked files
+- **Latest Update:** `62760ab chore: add stale issue and PR validators`
+
+
+---
+*☕ If you found this project useful, you can support my work at [kape.stimmie.dev](https://kape.stimmie.dev)!*
