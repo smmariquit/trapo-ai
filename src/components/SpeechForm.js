@@ -1,3 +1,5 @@
+// src/components/SpeechForm.js
+
 import React, { useState } from 'react';
 
 const SpeechForm = ({ onGenerateSpeech, isLoading }) => {

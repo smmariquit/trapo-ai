@@ -1,3 +1,5 @@
+// src/components/SpeechDisplay.js
+
 import React from 'react';
 
 const SpeechDisplay = ({ speech, isLoading, error }) => {
