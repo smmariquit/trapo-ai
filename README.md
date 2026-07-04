@@ -22,32 +22,32 @@ A humorous React application that generates satirical political campaign speeche
 1. **Clone or download this project**
 
 2. **Install dependencies**
-   ```bash
+ ```bash
    npm install
    ```
 
 3. **Get your Gemini API key**
-   - Visit [Google AI Studio](https://makersuite.google.com/app/apikey)
-   - Sign in with your Google account
-   - Create a new API key
-   - Copy the key (you'll need it when using the app)
+ - Visit [Google AI Studio](https://makersuite.google.com/app/apikey)
+ - Sign in with your Google account
+ - Create a new API key
+ - Copy the key (you'll need it when using the app)
 
 4. **Start the development server**
-   ```bash
+ ```bash
    npm run dev
    ```
-   This will start both the React frontend (port 3000) and the Express backend (port 3001)
+ This will start both the React frontend (port 3000) and the Express backend (port 3001)
 
 5. **Open your browser**
-   Navigate to `http://localhost:3000`
+ Navigate to `http://localhost:3000`
 
 ## 🎯 How to Use
 
 1. **Enter your Gemini API key** in the designated field
 2. **Fill out the form**:
-   - Your name
-   - The position you're running for (from the dropdown)
-   - The location/area you're running in
+ - Your name
+ - The position you're running for (from the dropdown)
+ - The location/area you're running in
 3. **Click "Generate Speech"** and wait for your humorous political masterpiece!
 4. **Copy the speech** using the copy button if you want to save it
 
@@ -78,7 +78,7 @@ A humorous React application that generates satirical political campaign speeche
 1. Create a Heroku account
 2. Install Heroku CLI
 3. Run:
-   ```bash
+ ```bash
    heroku create your-app-name
    git add .
    git commit -m "Initial commit"
@@ -124,7 +124,6 @@ This project is open source and available under the MIT License.
 - **Tech Stack:** React, Node.js/NPM
 - **Repository Size:** 18 tracked files
 - **Latest Update:** `62760ab chore: add stale issue and PR validators`
-
 
 ---
 *☕ If you found this project useful, you can support my work at [kape.stimmie.dev](https://kape.stimmie.dev)!*
