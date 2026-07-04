@@ -23,8 +23,8 @@ A humorous React application that generates satirical political campaign speeche
 
 2. **Install dependencies**
  ```bash
-   npm install
-   ```
+ npm install
+ ```
 
 3. **Get your Gemini API key**
  - Visit [Google AI Studio](https://makersuite.google.com/app/apikey)
@@ -34,8 +34,8 @@ A humorous React application that generates satirical political campaign speeche
 
 4. **Start the development server**
  ```bash
-   npm run dev
-   ```
+ npm run dev
+ ```
  This will start both the React frontend (port 3000) and the Express backend (port 3001)
 
 5. **Open your browser**
@@ -79,11 +79,11 @@ A humorous React application that generates satirical political campaign speeche
 2. Install Heroku CLI
 3. Run:
  ```bash
-   heroku create your-app-name
-   git add .
-   git commit -m "Initial commit"
-   git push heroku main
-   ```
+ heroku create your-app-name
+ git add .
+ git commit -m "Initial commit"
+ git push heroku main
+ ```
 
 ### Option 2: Deploy to Vercel
 1. Install Vercel CLI: `npm i -g vercel`
